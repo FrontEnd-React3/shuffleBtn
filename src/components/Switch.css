@@ -21,12 +21,19 @@
   position: absolute;
   cursor: pointer;
   border-radius: 3px;
-
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: white;
+  background: red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  font-family: 'ShadowsIntoLight';
+  color: white;
+  font-weight: 600;
+  padding-right: 11px;
 }
 
 .slider:before {
@@ -38,9 +45,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  content: 'JA';
+  content: 'BETALEND';
   font-weight: 600;
-  font-size: 20px;
+  font-size: 12px;
   font-family: 'ShadowsIntoLight';
   color: white;
   height: 35px;
@@ -48,8 +55,7 @@
   bottom: 4px;
   background: green;
   transition: 0.4s;
-  border-radius: 3px;
-  opacity: 0;
+  opacity: 1;
 }
 .slider:after {
   position: absolute;
@@ -60,15 +66,15 @@
   left: 60;
   right: 0;
   bottom: 0;
-  content: 'NEEN';
+  content: 'GRATIS';
   font-family: 'ShadowsIntoLight';
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 600;
   color: white;
   height: 35px;
   width: 60px;
   bottom: 4px;
-  background: red;
+  background: white;
   transition: 0.2s;
   border-radius: 3px;
 }
@@ -78,8 +84,9 @@ input:checked + .slider:after {
 }
 
 input:checked + .slider:before {
-  opacity: 1;z-index: 999
+  opacity: 1;
 }
 
-
-
+input:checked + .Fft__titleright {
+  opacity: 0.2;
+}
